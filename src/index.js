@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-/* Importing the App component from the App.js file. */
-import App2 from "./App2"; // import App from './App';
-import Form from "./components/form";
+// Components
+// import UserProfile from "./components/UserProfile";
+import App from "./App";
 
 import reportWebVitals from "./reportWebVitals";
 
@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div style={{ backgroundColor: "#005580", height: "1000px" }}>
     <React.StrictMode>
-      {/* <App /> */}
-      <App2 />
-      <Form />
+      <h1>Welcome! Millen</h1>
+      {/* <UserProfile title="Millen" /> */}
+      <App />
     </React.StrictMode>
   </div>
 );
