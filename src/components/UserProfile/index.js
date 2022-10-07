@@ -2,11 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function UserProfile(props) {
+  const handleOnCliked = () => {
+    props.onUpdateClicked("hello", 2121);
+  };
   return (
     <div>
       <h1>{props.title}</h1>
       <h1>{props.address.city}</h1>
-      <button>Updated</button>
+      <button onClick={handleOnCliked}>Updated</button>
     </div>
   );
 }
@@ -18,5 +21,7 @@ UserProfile.propTypes = {
     zipCode: PropTypes.string.isRequired,
     city: "",
   }).isRequired,
+  onUpdateClick: PropTypes.func,
 };
+
 export default UserProfile;
