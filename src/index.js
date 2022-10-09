@@ -7,6 +7,7 @@ import "./index.css";
 import App from "./App";
 
 import reportWebVitals from "./reportWebVitals";
+import Clock from "./components/Clock";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +16,7 @@ root.render(
       <h1>Welcome! Millen</h1>
       {/* <UserProfile title="Millen" /> */}
       <App />
+      <Clock />
     </React.StrictMode>
   </div>
 );
